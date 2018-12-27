@@ -1,0 +1,31 @@
+{
+  "name": "aws-nodejs-typescript",
+  "version": "1.0.0",
+  "description": "Serverless webpack example using Typescript",
+  "main": "handler.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --require ts-node/register ./tests/*.spec.ts",
+    "test-jenkins": "JUNIT_REPORT_PATH=jenkins-test-results.xml ./node_modules/.bin/mocha --require ts-node/register ./tests/**/*.spec.ts --colors --reporter mocha-jenkins-reporter"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.1",
+    "@types/node": "^8.0.57",
+    "serverless-webpack": "^5.1.1",
+    "source-map-support": "^0.5.6",
+    "ts-loader": "^4.2.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.5.0",
+    "mocha": "^5.2.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-string": "^1.5.0",
+    "@types/chai": "^4.1.4",
+    "@types/chai-as-promised": "^7.1.0",
+    "@types/chai-string": "^1.4.1",
+    "@types/mocha": "^5.2.5",
+    "mocha-jenkins-reporter": "^0.4.1"
+  },
+  "author": "The serverless webpack authors (https://github.com/elastic-coders/serverless-webpack)",
+  "license": "MIT"
+}
